@@ -1,1 +1,7 @@
-site_name: My Docs
+site_name: docs.naokilog.com
+copyright: 2021 naokilog.com
+theme: material
+extra:
+  version: 0.1
+markdown_extensions:
+  - nl2br
