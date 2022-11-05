@@ -1,3 +1,4 @@
 # github pages test
 
-test
+https://naoria45.github.io/pages/
+

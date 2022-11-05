@@ -9,12 +9,18 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - toc:
+      permalink: true
+  - codehilite:
+  
 
 plugins:
   - glightbox
 
 nav:
   - index.md
+  - junos:
+    - junos/fundamental.md
   - sample.md
 
 extra_css:
