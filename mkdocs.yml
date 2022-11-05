@@ -1,0 +1,21 @@
+site_name: docs.naokilog.com
+copyright: 2022 naokilog.com
+theme: material
+extra:
+  version: 0.1
+
+markdown_extensions:
+  - nl2br
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - glightbox
+
+nav:
+  - index.md
+  - sample.md
+
+extra_css:
+  - css/extra.css
