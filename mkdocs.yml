@@ -16,11 +16,29 @@ markdown_extensions:
 
 plugins:
   - glightbox
+  - search
+  - git-revision-date-localized
 
 nav:
   - index.md
-  - junos:
-    - junos/fundamental.md
+  - JUNOS:
+    - junos/life-cycle.md
+    - 設定:
+      - junos/setup.md
+      - junos/fundamental.md
+      - junos/initialize.md
+  - SRX:
+    - srx/nat/source-nat.md
+    - srx/nat/destination-nat.md
+    - srx/pppoe.md
+    - srx/ipsec/site-to-site.md
+    - srx/ipsec/site-to-site-nat.md
+  - vSRX:
+    - vsrx/vsrx-vsphere-installation.md  
+    - vsrx/vsrx-azure-installation.md
+  - Others:
+      - other/vlabs.md
+      - other/useful-link.md
   - sample.md
 
 extra_css:

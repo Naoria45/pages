@@ -40,3 +40,37 @@ nav.md-tabs {
     border-bottom: 1px dotted #888;
 }
 
+/*code hilight bg color*/
+.md-typeset code {
+    background-color: #eaf4fc;
+}
+
+
+/* code tab */
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-label {
+    color: White;
+    background: LightGray;
+    margin-right: 5px;
+    padding: 3px 3px;
+    order: -1;
+}
+.tab-content {
+    width: 100%;
+    display: none;
+}
+/* アクティブなタブ */
+.tab-switch:checked+.tab-label {
+    background: #83AF33;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+     display: block;
+     background: #eaf4fc;
+}
+/* ラジオボタン非表示 */
+.tab-switch {
+    display: none;
+}
