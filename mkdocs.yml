@@ -29,7 +29,7 @@ nav:
   - SRX:
     - srx/pppoe.md
     - vSRX:
-      - vsrx/vsrx-vsphere-installation.md  
+      - srx/vsrx/vsrx-vsphere-installation.md  
   - Others:
       - other/vlabs.md
       - other/useful-link.md
