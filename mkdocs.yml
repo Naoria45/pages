@@ -24,7 +24,6 @@ nav:
   - JUNOS:
     - junos/life-cycle.md
     - 設定:
-      - junos/setup.md
       - junos/fundamental.md
       - junos/initialize.md
   - SRX:
