@@ -28,8 +28,8 @@ nav:
       - junos/initialize.md
   - SRX:
     - srx/pppoe.md
-  - vSRX:
-    - vsrx/vsrx-vsphere-installation.md  
+    - vSRX:
+      - vsrx/vsrx-vsphere-installation.md  
   - Others:
       - other/vlabs.md
       - other/useful-link.md
