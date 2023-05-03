@@ -1,5 +1,5 @@
 site_name: docs.naokilog.com
-copyright: 2022 naokilog.com
+copyright: 2023 naokilog.com
 theme: material
 extra:
   version: 0.1
@@ -12,6 +12,8 @@ markdown_extensions:
   - toc:
       permalink: true
   - codehilite:
+  - pymdownx.tabbed:
+      alternate_style: true
   
 
 plugins:
@@ -37,3 +39,6 @@ nav:
 
 extra_css:
   - css/extra.css
+
+repo_url: https://github.com/Naoria45/pages
+repo_name: Naoria45/pages
