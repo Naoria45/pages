@@ -1,0 +1,1669 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../life-cycle/">
+      
+      
+        <link rel="next" href="../initialize/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.9">
+    
+    
+      
+        <title>基本設定 - docs.naokilog.com</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.85bb2934.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="docs.naokilog.com" class="md-header__button md-logo" aria-label="docs.naokilog.com" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            docs.naokilog.com
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              基本設定
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="docs.naokilog.com" class="md-nav__button md-logo" aria-label="docs.naokilog.com" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    docs.naokilog.com
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          JUNOS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          JUNOS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../life-cycle/" class="md-nav__link">
+        Junos のライフサイクル
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          設定
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          設定
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          基本設定
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        基本設定
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#root" class="md-nav__link">
+    root パスワード
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    ホスト名
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    管理インターフェース
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    DNS サーバーの設定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    日付、時刻、タイムゾーンの設定
+  </a>
+  
+    <nav class="md-nav" aria-label="日付、時刻、タイムゾーンの設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ntp" class="md-nav__link">
+    NTP サーバーの設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    設定の確認
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ローカルで時刻を設定する場合
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rescue-config" class="md-nav__link">
+    rescue config について
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    インターフェースの設定
+  </a>
+  
+    <nav class="md-nav" aria-label="インターフェースの設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    物理インターフェースの名前
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    論理ユニット
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip" class="md-nav__link">
+    IP の設定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    ライセンスインストール
+  </a>
+  
+    <nav class="md-nav" aria-label="ライセンスインストール">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    ライセンスの確認
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    ユーザー管理
+  </a>
+  
+    <nav class="md-nav" aria-label="ユーザー管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    ログインバナーの設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    ログインアカウント
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    ユーザーの作成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    ログインクラス
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    リモート認証の設定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    リモートアクセスの有効化
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snmp" class="md-nav__link">
+    SNMP の設定
+  </a>
+  
+    <nav class="md-nav" aria-label="SNMP の設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    コミュニティ設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snmp_1" class="md-nav__link">
+    SNMP トラップの設定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syslog" class="md-nav__link">
+    Syslog の設定
+  </a>
+  
+    <nav class="md-nav" aria-label="Syslog の設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syslog_1" class="md-nav__link">
+    Syslog サーバーへのメッセージ転送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    ターミナルへのメッセージ表示
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    CLI の便利機能など
+  </a>
+  
+    <nav class="md-nav" aria-label="CLI の便利機能など">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    set コマンド表示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-more" class="md-nav__link">
+    | no-more
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-compare" class="md-nav__link">
+    show | compare
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#match" class="md-nav__link">
+    | match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename" class="md-nav__link">
+    rename コマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deactivate" class="md-nav__link">
+    deactivate コマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy" class="md-nav__link">
+    copy コマンド
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../initialize/" class="md-nav__link">
+        初期化方法
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          SRX
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          SRX
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../srx/pppoe/" class="md-nav__link">
+        PPPoE 設定
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          vSRX
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          vSRX
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vsrx/vsrx-vsphere-installation/" class="md-nav__link">
+        vSRX インストール for vSphere
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Others
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Others
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/vlabs/" class="md-nav__link">
+        Juniper vLabs の使い方
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/useful-link/" class="md-nav__link">
+        Juniper Networks リンク集
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample/" class="md-nav__link">
+        sample page
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#root" class="md-nav__link">
+    root パスワード
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    ホスト名
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    管理インターフェース
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    DNS サーバーの設定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    日付、時刻、タイムゾーンの設定
+  </a>
+  
+    <nav class="md-nav" aria-label="日付、時刻、タイムゾーンの設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ntp" class="md-nav__link">
+    NTP サーバーの設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    設定の確認
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ローカルで時刻を設定する場合
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rescue-config" class="md-nav__link">
+    rescue config について
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    インターフェースの設定
+  </a>
+  
+    <nav class="md-nav" aria-label="インターフェースの設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    物理インターフェースの名前
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    論理ユニット
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip" class="md-nav__link">
+    IP の設定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    ライセンスインストール
+  </a>
+  
+    <nav class="md-nav" aria-label="ライセンスインストール">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    ライセンスの確認
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    ユーザー管理
+  </a>
+  
+    <nav class="md-nav" aria-label="ユーザー管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    ログインバナーの設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    ログインアカウント
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    ユーザーの作成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    ログインクラス
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    リモート認証の設定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    リモートアクセスの有効化
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snmp" class="md-nav__link">
+    SNMP の設定
+  </a>
+  
+    <nav class="md-nav" aria-label="SNMP の設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    コミュニティ設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snmp_1" class="md-nav__link">
+    SNMP トラップの設定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syslog" class="md-nav__link">
+    Syslog の設定
+  </a>
+  
+    <nav class="md-nav" aria-label="Syslog の設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syslog_1" class="md-nav__link">
+    Syslog サーバーへのメッセージ転送
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    ターミナルへのメッセージ表示
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    CLI の便利機能など
+  </a>
+  
+    <nav class="md-nav" aria-label="CLI の便利機能など">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    set コマンド表示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-more" class="md-nav__link">
+    | no-more
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-compare" class="md-nav__link">
+    show | compare
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#match" class="md-nav__link">
+    | match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename" class="md-nav__link">
+    rename コマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deactivate" class="md-nav__link">
+    deactivate コマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy" class="md-nav__link">
+    copy コマンド
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">基本設定<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>root（管理者）のパスワード、ホスト名、管理インターフェースの設定について記載します。</p>
+<p>各階層で設定可能なコマンドは <code>?</code> で確認できます。<br />
+<div class="highlight"><pre><span></span><code>root@vSRX-01&gt; configure
+Entering configuration mode
+
+[edit]
+root@vSRX-01# set system ?
+Possible completions:
+&gt; accounting           System accounting configuration
+  allow-6pe-traceroute  Allow IPv4-mapped v6 address in tag icmp6 TTL expired packet
+  allow-6vpe-traceroute-src-select  Select best src addr for icmp6 ttl expiry error in case 6vpe
+  allow-l3vpn-traceroute-src-select  Select best src addr for icmp ttl expiry error in case l3vpn
+  allow-v4mapped-packets  Allow processing for packets with V4 mapped address
++ apply-groups         Groups from which to inherit configuration data
+(省略)
+</code></pre></div></p>
+<h2 id="root">root パスワード<a class="headerlink" href="#root" title="Permanent link">&para;</a></h2>
+<p>root アカウントは Junos であらかじめ用意されているユーザーです。<br />
+デフォルトでスーパーユーザーに設定されており、すべてのパーミッションが与えられています。</p>
+<p>工場出荷時や初期化後など、root のパスワードがせって視されていない場合、commit する前に root のパスワードを設定する必要があります。<br />
+以下のコマンドで設定します。<br />
+<div class="highlight"><pre><span></span><code># set system root-authentication plain-text-password
+New password:
+Retype new password:
+</code></pre></div><br />
+plain-text-password となっていますが、暗号化されて保存されます。</p>
+<p>デフォルトでのパスワードの要件は 6 文字以上です。<br />
+条件を満たさない場合以下のようなエラーが表示されます。<br />
+<div class="highlight"><pre><span></span><code>error: minimum password length is 6
+error: require change of case, digits or punctuation
+</code></pre></div></p>
+<p>デフォルトでは root ログインはコンソールポートからのみ許可されています。<br />
+必要に応じて ssh での root ログイン許可の設定を行います。<br />
+allow, deny, deny-password を設定できます。<br />
+<div class="highlight"><pre><span></span><code># set system services ssh root-login allow
+</code></pre></div></p>
+<p>公開鍵を用いた SSH 接続を行う場合、以下のコマンドで公開鍵の登録を行います。</p>
+<div class="highlight"><pre><span></span><code># set system root-authentication ssh-rsa KEY-STRING
+</code></pre></div>
+<p>ssh-rsa, ssh-ecdsa, ssh-ed25519 が設定可能です。</p>
+<h2 id="_2">ホスト名<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>デバイスのホスト名は次のコマンドで設定します。</p>
+<div class="highlight"><pre><span></span><code># set system host-name HOSTNAME
+</code></pre></div>
+<p>設定されたホスト名は以下のように表示されます。</p>
+<div class="highlight"><pre><span></span><code>root# set system host-name vSRX-01
+
+[edit]
+root# commit
+commit complete
+
+[edit]
+root@vSRX-01#
+</code></pre></div>
+<h2 id="_3">管理インターフェース<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>管理インターフェースは SSH や Telnet でデバイスにリモートでアクセスするためのインターフェースです。<br />
+多くの Juniper 製品では専用の管理ポートを搭載しており、OOBM (Out-of-Band Management) と呼ばれます。</p>
+<p>通常のインターフェースの1つを管理インターフェースとして設定できるものもあります。<br />
+管理ポートを使用するには、管理インターフェースとして IP アドレスを設定します。</p>
+<div class="highlight"><pre><span></span><code># set interface fxp0 unit 0 family inet address 172.16.11.22/24
+</code></pre></div>
+<p>管理インターフェース名はプラットフォームによって異なります。</p>
+<table>
+<thead>
+<tr>
+<th>プラットフォーム</th>
+<th>管理ポート</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EX シリーズ</td>
+<td>me0, vme</td>
+</tr>
+<tr>
+<td>QFX シリーズ</td>
+<td>em0, vme</td>
+</tr>
+<tr>
+<td>MX シリーズ</td>
+<td>fxp0</td>
+</tr>
+<tr>
+<td>SRX シリーズ</td>
+<td>fxp0, ge-0/0/0</td>
+</tr>
+<tr>
+<td>Junos Evolved </br>プラットフォーム</td>
+<td>re0:mgmt-* など</td>
+</tr>
+</tbody>
+</table>
+<p>詳細は <a href="https://www.juniper.net/documentation/jp/ja/software/junos/junos-getting-started/topics/concept/interfaces-understanding-management-ethernet-interfaces.html">ドキュメント</a> をご確認ください。</p>
+<h2 id="dns">DNS サーバーの設定<a class="headerlink" href="#dns" title="Permanent link">&para;</a></h2>
+<p>DNS サーバーを設定しておくことでホスト名でほかの機器にアクセスすることができます。<br />
+DNS サーバーは複数設定することが可能です。<br />
+<div class="highlight"><pre><span></span><code># set system name-server 172.17.1.53
+# set system name-server 172.17.1.54
+</code></pre></div></p>
+<p>デバイス自体が所属するドメイン名を設定が推奨されます。<br />
+<code>example.com</code> の場合、以下のような設定を行います。</p>
+<p><div class="highlight"><pre><span></span><code># set system domain-name example.com
+</code></pre></div><br />
+ホスト名を解決する際に、<code>example.com</code>, <code>nw.example.com</code> の順でドメイン名を検索する設定を行います。<br />
+<div class="highlight"><pre><span></span><code># set system domain-search [example.com nw.example.com]
+</code></pre></div><br />
+ホスト名、IP アドレスが解決できることを確認します。<br />
+<div class="highlight"><pre><span></span><code>&gt; show host 172.16.10.10
+&gt; show host juniper1
+</code></pre></div></p>
+<h2 id="_4">日付、時刻、タイムゾーンの設定<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="ntp">NTP サーバーの設定<a class="headerlink" href="#ntp" title="Permanent link">&para;</a></h3>
+<p>Junos の起動時に時刻を取得するには以下のコマンドを使用して NTP サーバーの IP アドレスを指定します。<br />
+<div class="highlight"><pre><span></span><code># set system ntp boot-server 172.17.1.123
+</code></pre></div><br />
+定期的に時刻同期を行う場合は、以下のコマンドで設定を行います。（複数設定可能）<br />
+<div class="highlight"><pre><span></span><code># set system ntp server 172.16.1.123 prefer 
+# set system ntp server 172.17.1.123
+</code></pre></div><br />
+タイムゾーンを設定します。デフォルトは UTC です。<br />
+<div class="highlight"><pre><span></span><code># set system time-zone Asia/Tokyo
+</code></pre></div><br />
+指定できるタイムゾーンの一覧は ? で確認できます。<br />
+<div class="highlight"><pre><span></span><code># set system time-zone ?
+Possible completions:
+  &lt;time-zone&gt;          Time zone name or POSIX-compliant time zone string
+  Africa/Abidjan       
+  Africa/Accra         
+  Africa/Addis_Ababa   
+  Africa/Algiers       
+  Africa/Asmara
+  ...
+</code></pre></div><br />
+GTM (UTC) からのオフセット (-14 ~ +12) でタイムゾーンを指定することも可能です。<br />
+<div class="highlight"><pre><span></span><code># set system time-zone GMT+9 
+</code></pre></div></p>
+<h3 id="_5">設定の確認<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>システムの時刻を確認するには Operational モードで <code>show system uptime</code> コマンドを実行します。<br />
+<div class="highlight"><pre><span></span><code>&gt; show system uptime 
+Current time: 2022-10-17 12:01:07 UTC
+Time Source:  LOCAL CLOCK 
+System booted: 2022-10-13 01:06:41 UTC (4d 10:54 ago)
+Protocols started: 2022-10-13 01:10:39 UTC (4d 10:50 ago)
+Last configured: 2022-10-17 10:53:32 UTC (01:07:35 ago) by root
+12:01PM  up 4 days, 10:54, 2 users, load averages: 1.30, 1.56, 1.49
+</code></pre></div></p>
+<p>NTP サーバーの同期状態を確認するには、<code>show ntp associations</code> コマンドを実行します。アスタリスクが同期しているサーバを表します。<br />
+<div class="highlight"><pre><span></span><code>&gt; show ntp associations 
+   remote         refid           auth st t when poll reach   delay   offset  jitter
+====================================================================================
+*ntp-a2.nict.go.jp
+                  .NICT.             -  1 -  665 1024  377    6.082   -8.141   0.153
+</code></pre></div></p>
+<h3 id="_6">ローカルで時刻を設定する場合<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>通常は NTP サーバーを設定しますが、アクセスできないような場合は<br />
+YYYYMMDDhhmm.ss の形式で、オンボードのクロックを使用して時刻を設定します。<br />
+<div class="highlight"><pre><span></span><code>set date 202204290550.00
+</code></pre></div></p>
+<h2 id="rescue-config">rescue config について<a class="headerlink" href="#rescue-config" title="Permanent link">&para;</a></h2>
+<p>rescue config はデフォルトの状態として残しておきたいコンフィグや緊急時に適用したいコンフィグを保存できます。<br />
+rescue config が設定されていない場合、機器の ALERM LED がオレンジ点灯します。<br />
+<div class="highlight"><pre><span></span><code>&gt; request system configuration rescue save
+</code></pre></div></p>
+<p>確認コマンド<br />
+<div class="highlight"><pre><span></span><code>&gt; show system configuration rescue
+</code></pre></div></p>
+<p>rescue config に戻したい場合は、以下のコマンドを実行します。<br />
+<div class="highlight"><pre><span></span><code>[edit]
+# rollback rescue
+</code></pre></div></p>
+<p>また、機器に RESET CONFIG ボタンがある場合、ボタンを短く押すことで rescue config に戻すことが可能です。15 秒以上押すと初期化されてしまうため、注意してください。</p>
+<p>rescue configを削除する場合、次のコマンドを実行します。</p>
+<div class="highlight"><pre><span></span><code>&gt; request system configuration rescue delete
+</code></pre></div>
+<h2 id="_7">インターフェースの設定<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">物理インターフェースの名前<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>Junos のインターフェースは ge-0/0/1 などで表記されます。<br />
+これは "識別子-スロット/PIC/ポート" の形式となっています。</p>
+<p>識別子 : ge(gigabit ethernet) や xe(10Gbit ethernet) など。<br />
+スロット: 固定インターフェースの場合、通常 0 が割り当てられます。シャーシ型などハイエンドプラットフォームでは FPC (Flexible PIC Concentrator) 基盤のスロット番号が割り当てられます。<br />
+PIC : スロット内の PIC(物理インターフェースカード) の位置を示しています。<br />
+ポート : ポート番号を示します。</p>
+<h3 id="_9">論理ユニット<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>物理インターフェースを論理的に複数に分割することができます。<br />
+この論理インターフェースをユニットと呼びます。各物理インターフェースに1つ以上の論理ユニットの設定が必要です。<br />
+論理ユニットは <code>ge-0/0/1.0</code> のように表記されます。</p>
+<h2 id="ip">IP の設定<a class="headerlink" href="#ip" title="Permanent link">&para;</a></h2>
+<p>IP アドレスの設定は次のようなコマンドになります。<br />
+<div class="highlight"><pre><span></span><code># set interfaces ge-0/0/1 unit 0 family inet address 192.168.11.1/24
+</code></pre></div><br />
+ge-0/0/1 : 物理インターフェースの名前。<br />
+unit 0 : 論理ユニット。<br />
+family inet : 論理インターフェースで使用するプロトコル。ipv4 は inet <br />
+address : アドレス。</p>
+<p>また、論理ユニットを省略表記にして以下のように表すこともできます。<br />
+<div class="highlight"><pre><span></span><code># set interfaces ge-0/0/1.0 family inet address 192.168.11.1/24
+</code></pre></div></p>
+<p>Operational モードでの確認<br />
+<div class="highlight"><pre><span></span><code>&gt; show configuration interfaces ge-0/0/1 
+unit 0 {
+    family inet {
+        address 192.168.11.1/24;
+    }
+}
+</code></pre></div></p>
+<p>表示された結果は複数行で表示されます。set コマンドの形式で表示したい場合、<code>| display set</code> を使用します。<br />
+<div class="highlight"><pre><span></span><code>&gt; show configuration interfaces ge-0/0/1 | display set 
+set interfaces ge-0/0/1 unit 0 family inet address 192.168.11.1/24
+</code></pre></div></p>
+<h2 id="_10">ライセンスインストール<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>SRX シリーズは追加のライセンスで機能を追加することができます。<br />
+ライセンス投入はファイルを転送してからファイルを指定して読み込む方法と、ライセンスファイル内の文字列をターミナルから入力する方法があります。</p>
+<div class="highlight"><pre><span></span><code>&gt; request system license add terminal    
+[Type ^D at a new line to end input,
+ enter blank line between each license key]
+</code></pre></div>
+<h3 id="_11">ライセンスの確認<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>現在使用されているライセンスは以下のコマンドで確認できます。<br />
+<div class="highlight"><pre><span></span><code>&gt; show system license 
+License usage: 
+                                 Licenses     Licenses    Licenses    Expiry
+  Feature name                       used    installed      needed 
+  Virtual Appliance                     1            1           0    2022-12-12 01:10:42 UTC
+  remote-access-ipsec-vpn-client        0            2           0    permanent
+  remote-access-juniper-std             0            2           0    permanent
+  VCPU Scale                            2            2           0    2022-12-12 01:10:42 UTC
+
+Licenses installed: 
+  License identifier: E20210617001
+  License version: 4
+  Order Type: trial
+  Software Serial Number: 061520210001
+  Customer ID: vSRX-JuniperEval
+  Features:
+    Virtual Appliance - Virtual Appliance
+      date-based, 2022-10-13 01:10:42 UTC - 2022-12-12 01:10:42 UTC
+    VCPU Scale       - VCPU number scale
+      date-based, 2022-10-13 01:10:42 UTC - 2022-12-12 01:10:42 UTC
+
+  License identifier: E20210617002
+  License version: 4
+  Order Type: trial
+  Software Serial Number: 061520210002
+  Customer ID: vSRX-JuniperEval
+  Features:
+    VCPU Scale       - VCPU number scale
+      date-based, 2022-10-13 01:10:42 UTC - 2022-12-12 01:10:42 UTC
+</code></pre></div></p>
+<h2 id="_12">ユーザー管理<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h3 id="_13">ログインバナーの設定<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>ログインバナーを設定すると、ユーザーが SSH などでログインする際にメッセージを表示することができます。<br />
+ログインメッセージは接続された際に表示されます。<br />
+<div class="highlight"><pre><span></span><code>set system login message &quot;Welcome \n to Junos World.\n&quot;
+</code></pre></div></p>
+<p>ログインアナウンスはログイン後に表示されます。<br />
+ホスト名や IP アドレス、警告文などを設定することが多いです。</p>
+<div class="highlight"><pre><span></span><code>set system login announcement &quot;Login Success.&quot;
+</code></pre></div>
+<h3 id="_14">ログインアカウント<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>Junos ではローカルユーザーとパスワード、RADIUS または TACACS+ <br />
+プロトコルを使用したリモートサーバによる認証でユーザーの管理を行います。</p>
+<h3 id="_15">ユーザーの作成<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code># set system login user USERNAME class super-user 
+</code></pre></div><br />
+パスワードの設定<br />
+<div class="highlight"><pre><span></span><code># set system login user USERNAME authentication plain-text-password
+</code></pre></div><br />
+フルネームや UID を指定して作成することも可能です。</p>
+<h3 id="_16">ログインクラス<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>ユーザーはパーミッションによってログインクラスが定義されています。</p>
+<ul>
+<li>super-user : すべての権限</li>
+<li>operator : パーミッションのクリア、ネットワーク、リセット、トレース、および参照</li>
+<li>read-only : パーミッションの参照</li>
+<li>unauthorized : パーミッションなし</li>
+</ul>
+<p>デフォルトでは上記の4クラスが提供されていますが、さらに詳細な権限管理を行いたい場合、<br />
+カスタムログインクラスを作成することができます。</p>
+<h3 id="_17">リモート認証の設定<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>RADIUS サーバーの指定<br />
+<div class="highlight"><pre><span></span><code># set system radius-server 172.16.18.12
+# set system radius-server 172.16.18.12 port 1812
+# set system radius-server 172.16.18.12 seccret Juniper!1
+</code></pre></div></p>
+<p>TACACS+ サーバーの設定</p>
+<div class="highlight"><pre><span></span><code># set system tacplus-server 172.16.27.49
+# set system tacplus-server 172.16.27.49 port 49
+# set system tacplus-server 172.16.27.49 secret Juniper!1
+</code></pre></div>
+<p>認証を試行する順序を指定します。<br />
+<div class="highlight"><pre><span></span><code>set system authentication-order [radius tacplus password]
+</code></pre></div><br />
+この例では RADIUS サーバと TACACS+ の両方が設定されており、<br />
+まず RADIUS サーバに認証を実施し、失敗した場合次に TACACS+ サーバー、<br />
+最後にローカルに設定されているユーザーアカウントを確認します。</p>
+<h2 id="_18">リモートアクセスの有効化<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<p>SSH や Telnet によるデバイスへのアクセスを有効化するには以下のコマンドを使用します。<br />
+Telnet や FTP はパスワードがテキストでやり取りされるため、SSH、SCP の使用が推奨されます。<br />
+<div class="highlight"><pre><span></span><code># set system services ssh
+# set system services ftp
+# set system services telnet
+</code></pre></div></p>
+<h2 id="snmp">SNMP の設定<a class="headerlink" href="#snmp" title="Permanent link">&para;</a></h2>
+<p>Junos は SNMPv1, V2c および v3 プロトコルをサポートしています。<br />
+SNMP エージェントはデフォルトでは無効です。</p>
+<h3 id="_19">コミュニティ設定<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>読み込み専用の SNMP コミュニティを作成する<br />
+<div class="highlight"><pre><span></span><code>set snmp community public
+</code></pre></div><br />
+<div class="highlight"><pre><span></span><code>edit snmp community public
+[edit groups common snmp community public]
+set authorization read-only
+set clients 192.168.1.0/24
+set clients 0.0.0.0/0 restrict
+</code></pre></div></p>
+<p>読み込み/書き込みの SNMP コミュニティを作成する<br />
+<div class="highlight"><pre><span></span><code>[edit groups common snmp]
+edit community private
+set authorization read-write
+set clients 192.168.1.15/24
+set clients 0.0.0.0/0 restrict
+</code></pre></div></p>
+<h3 id="snmp_1">SNMP トラップの設定<a class="headerlink" href="#snmp_1" title="Permanent link">&para;</a></h3>
+<p>SNMP トラップは SNMP エージェントからネットワーク管理システムなどに送信される<br />
+メッセージです。 </p>
+<div class="highlight"><pre><span></span><code>edit group common snmp
+[edit group common snmp]
+set trap-options source-address lo0
+set trap-group managers version v2 targets 192.168.1.15
+set trap-group managers version v2 targets 192.168.1.15 categories authentication
+</code></pre></div>
+<p>SNMP カテゴリー<br />
+| オプション | MIB | 説明 |<br />
+|- |- |- |<br />
+| authentication | 標準 MIB-II | 絵デバイスでの認証失敗 |<br />
+| chassis | Juniper 独自 | ハードウェア状態の通知 |<br />
+| configuration | Juniper 独自 | 設定モードの通知 |<br />
+| link | Juniper 独自 | インターフェースの変化 |<br />
+| rmon-alarm | Juniper 独自 | SNMP リモートモニタリングイベント |<br />
+| routing | Juniper 独自 | ルーティングプロトコル通知 | <br />
+| startup | 標準 MIB-II | 再起動 |</p>
+<h2 id="syslog">Syslog の設定<a class="headerlink" href="#syslog" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>数値</th>
+<th>レベル</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>なし</td>
+<td>無効</td>
+</tr>
+<tr>
+<td>0</td>
+<td>emergency</td>
+<td>機能停止を招くシステムパニックなど</td>
+</tr>
+<tr>
+<td>1</td>
+<td>alert</td>
+<td>データベースの破損など、直ちに対処が必要な状況</td>
+</tr>
+<tr>
+<td>2</td>
+<td>critical</td>
+<td>物理的なエラーなど重大な問題がある状況</td>
+</tr>
+<tr>
+<td>3</td>
+<td>error</td>
+<td>致命的ではない一般的なエラー</td>
+</tr>
+<tr>
+<td>4</td>
+<td>warning</td>
+<td>モニタリングの必要がある状況</td>
+</tr>
+<tr>
+<td>5</td>
+<td>notice</td>
+<td>エラーではないが、対処が必要な可能性がある状況</td>
+</tr>
+<tr>
+<td>6</td>
+<td>info</td>
+<td>イベント</td>
+</tr>
+<tr>
+<td>7</td>
+<td>any</td>
+<td>ファシリティーからの全レベルのメッセージ</td>
+</tr>
+</tbody>
+</table>
+<h3 id="syslog_1">Syslog サーバーへのメッセージ転送<a class="headerlink" href="#syslog_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>set system syslog host LOGSERVER any notice
+</code></pre></div>
+<p>facility をオーバーライドするには以下のコマンドを使用します。<br />
+<div class="highlight"><pre><span></span><code># set facility-override local7
+</code></pre></div></p>
+<h3 id="_20">ターミナルへのメッセージ表示<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>set system syslog user * any emergency
+set system syslog console any error
+</code></pre></div>
+<h2 id="cli">CLI の便利機能など<a class="headerlink" href="#cli" title="Permanent link">&para;</a></h2>
+<h3 id="set">set コマンド表示<a class="headerlink" href="#set" title="Permanent link">&para;</a></h3>
+<p>show コマンドでは流し込み出来ない形式で表示されるため、コピペしたい場合などは以下のように <code>| display set</code> を使用します。<br />
+<div class="highlight"><pre><span></span><code>&gt; show configuration interfaces ge-0/0/1 | display set
+</code></pre></div></p>
+<h3 id="no-more">| no-more<a class="headerlink" href="#no-more" title="Permanent link">&para;</a></h3>
+<p>デフォルトでは more で１ページごとに表示されます。一度に全部を表示したい場合、コマンドの後ろに <code>| no-more</code> をつけます。<br />
+<code>show configuration | display set | no-more</code> のような使い方をします。</p>
+<h3 id="show-compare">show | compare<a class="headerlink" href="#show-compare" title="Permanent link">&para;</a></h3>
+<p>Candidate Config と以前のコンフィグを比較する場合などに使用できます。<br />
+<div class="highlight"><pre><span></span><code># show | compare rollback 2
+</code></pre></div></p>
+<div class="highlight"><pre><span></span><code># show | compare rollback 1    
+[edit system]
++   login {
++       user naoki {
++           class super-user;
++       }
++   }
++   time-zone GMT+9;
+[edit]
+</code></pre></div>
+<h3 id="match">| match<a class="headerlink" href="#match" title="Permanent link">&para;</a></h3>
+<p>出力から一致する行を抽出します。</p>
+<div class="highlight"><pre><span></span><code># show | display set | match interface 
+set interfaces ge-0/0/0 unit 0 family inet address 10.1.1.1/24
+set interfaces ge-0/0/1 unit 0 family inet address 192.168.1.1/24
+set interfaces fxp0 unit 0 family inet dhcp
+set interfaces st0 unit 0 family inet address 172.16.1.1/24
+</code></pre></div>
+<h3 id="rename">rename コマンド<a class="headerlink" href="#rename" title="Permanent link">&para;</a></h3>
+<p>インターフェースや vlan を変更したい場合、rename コマンドで変更が可能です。</p>
+<div class="highlight"><pre><span></span><code># rename interfaces ge-0/0/0 to ge-1/0/0
+</code></pre></div>
+<h3 id="deactivate">deactivate コマンド<a class="headerlink" href="#deactivate" title="Permanent link">&para;</a></h3>
+<h3 id="copy">copy コマンド<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code># copy ge-0/0/1 to ge-0/0/2
+</code></pre></div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 3, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2022 naokilog.com
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": 0.1}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
