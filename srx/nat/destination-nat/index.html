@@ -9,21 +9,21 @@
       
       
       
-        <link rel="prev" href="../nat/destination-nat/">
+        <link rel="prev" href="../source-nat/">
       
       
-        <link rel="next" href="../vsrx/vsrx-vsphere-installation/">
+        <link rel="next" href="../../pppoe/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.14">
     
     
       
-        <title>PPPoE 設定 - docs.naokilog.com</title>
+        <title>Destination NAT - docs.naokilog.com</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.85bb2934.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.85bb2934.min.css">
       
       
 
@@ -39,9 +39,9 @@
       
     
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -60,7 +60,7 @@
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -71,7 +71,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pppoe" class="md-skip">
+        <a href="#destination-nat" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="docs.naokilog.com" class="md-header__button md-logo" aria-label="docs.naokilog.com" data-md-component="logo">
+    <a href="../../.." title="docs.naokilog.com" class="md-header__button md-logo" aria-label="docs.naokilog.com" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PPPoE 設定
+              Destination NAT
             
           </span>
         </div>
@@ -204,7 +204,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="docs.naokilog.com" class="md-nav__button md-logo" aria-label="docs.naokilog.com" data-md-component="logo">
+    <a href="../../.." title="docs.naokilog.com" class="md-nav__button md-logo" aria-label="docs.naokilog.com" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -235,7 +235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Welcome
       </a>
     </li>
@@ -277,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../junos/life-cycle/" class="md-nav__link">
+      <a href="../../../junos/life-cycle/" class="md-nav__link">
         Junos のライフサイクル
       </a>
     </li>
@@ -318,7 +318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../junos/fundamental/" class="md-nav__link">
+      <a href="../../../junos/fundamental/" class="md-nav__link">
         基本設定
       </a>
     </li>
@@ -332,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../junos/initialize/" class="md-nav__link">
+      <a href="../../../junos/initialize/" class="md-nav__link">
         初期化方法
       </a>
     </li>
@@ -388,14 +388,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
       
       
       
@@ -404,7 +406,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
           NAT
@@ -417,30 +419,9 @@
   
   
     <li class="md-nav__item">
-      <a href="../nat/source-nat/" class="md-nav__link">
+      <a href="../source-nat/" class="md-nav__link">
         Source NAT
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../nat/destination-nat/" class="md-nav__link">
-        Destination NAT
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -462,12 +443,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          PPPoE 設定
+          Destination NAT
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        PPPoE 設定
+        Destination NAT
       </a>
       
         
@@ -486,8 +467,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pppoe_1" class="md-nav__link">
-    PPPoE 接続の確認
+  <a href="#_1" class="md-nav__link">
+    単一アドレスの変換の場合
+  </a>
+  
+    <nav class="md-nav" aria-label="単一アドレスの変換の場合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    設定サンプル
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    説明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arp" class="md-nav__link">
+    プロキシ ARP について
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    ポート番号に応じてアドレスの変換を行う場合（ポートフォワード）
+  </a>
+  
+    <nav class="md-nav" aria-label="ポート番号に応じてアドレスの変換を行う場合（ポートフォワード）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    設定サンプル
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#destination-nat_1" class="md-nav__link">
+    Destination NAT の確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    参考資料
   </a>
   
 </li>
@@ -496,6 +538,27 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pppoe/" class="md-nav__link">
+        PPPoE 設定
+      </a>
     </li>
   
 
@@ -534,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vsrx/vsrx-vsphere-installation/" class="md-nav__link">
+      <a href="../../vsrx/vsrx-vsphere-installation/" class="md-nav__link">
         vSRX インストール for vSphere
       </a>
     </li>
@@ -590,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../other/vlabs/" class="md-nav__link">
+      <a href="../../../other/vlabs/" class="md-nav__link">
         Juniper vLabs の使い方
       </a>
     </li>
@@ -604,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../other/useful-link/" class="md-nav__link">
+      <a href="../../../other/useful-link/" class="md-nav__link">
         Juniper Networks リンク集
       </a>
     </li>
@@ -626,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sample/" class="md-nav__link">
+      <a href="../../../sample/" class="md-nav__link">
         sample page
       </a>
     </li>
@@ -660,8 +723,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pppoe_1" class="md-nav__link">
-    PPPoE 接続の確認
+  <a href="#_1" class="md-nav__link">
+    単一アドレスの変換の場合
+  </a>
+  
+    <nav class="md-nav" aria-label="単一アドレスの変換の場合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    設定サンプル
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    説明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arp" class="md-nav__link">
+    プロキシ ARP について
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    ポート番号に応じてアドレスの変換を行う場合（ポートフォワード）
+  </a>
+  
+    <nav class="md-nav" aria-label="ポート番号に応じてアドレスの変換を行う場合（ポートフォワード）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    設定サンプル
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#destination-nat_1" class="md-nav__link">
+    Destination NAT の確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    参考資料
   </a>
   
 </li>
@@ -684,148 +808,130 @@
   
 
 
-<h1 id="pppoe">PPPoE 設定<a class="headerlink" href="#pppoe" title="Permanent link">&para;</a></h1>
-<p>図のような環境で SRX を用いて PPPoE 接続を行い、Trust Zone からインターネットにアクセスする設定。</p>
-<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/pppoe-sample.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/pppoe-sample.png" /></a></p>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>サンプル設定値</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>認証プロトコル</td>
-<td>chap</td>
-</tr>
-<tr>
-<td>認証ユーザー名</td>
-<td>juniper123@isp.example.net</td>
-</tr>
-<tr>
-<td>パスワード</td>
-<td>Juniper!1</td>
-</tr>
-<tr>
-<td>WAN 側インターフェース</td>
-<td>ge-0/0/0.0</td>
-</tr>
-</tbody>
-</table>
-<p>接続に使用するインターフェースに PPPoE カプセル化を指定<br />
-<div class="highlight"><pre><span></span><code>set interfaces ge-0/0/0 unit 0 encapsulation ppp-over-ether
+<h1 id="destination-nat">Destination NAT<a class="headerlink" href="#destination-nat" title="Permanent link">&para;</a></h1>
+<p>Destination NAT は宛先アドレスの変換を行います。<br />
+プライベート IP アドレスを使用しているサーバーをインターネットに公開する際などに使用される NAT です。</p>
+<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat_v2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat_v2.png" /></a></p>
+<h2 id="_1">単一アドレスの変換の場合<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>ポートの変換を行わない1対1の Destination NAT の設定です。<br />
+172.17.42.1 で受信したパケットを 10.0.0.2 のサーバーに転送します。</p>
+<h3 id="_2">設定サンプル<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>set security address-book global address SERVER1 10.0.0.2/32
+set security nat destination pool DstPool1 address 10.0.0.2/32
+set security nat destination rule-set DstNat-RS1 from zone untrust
+set security nat destination rule-set DstNat-RS1 rule DstNatR1 match destination-address 172.17.42.1/32
+set security nat destination rule-set DstNat-RS1 rule DstNatR1 then destination-nat pool DstPool1
+set security policies from-zone untrust to-zone trust policy SERVER1-ACCESS match source-address any
+set security policies from-zone untrust to-zone trust policy SERVER1-ACCESS match destination-address SERVER1
+set security policies from-zone untrust to-zone trust policy SERVER1-ACCESS match application any
+set security policies from-zone untrust to-zone trust policy SERVER1-ACCESS then permit
+set security zones security-zone trust host-inbound-traffic system-services ping
+set security zones security-zone trust interfaces ge-0/0/0.0
+set security zones security-zone untrust host-inbound-traffic system-services ping
+set security zones security-zone untrust interfaces ge-0/0/1.0
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.0.1/24
+set interfaces ge-0/0/1 unit 0 family inet address 172.17.42.1/24
+</code></pre></div>
+<h3 id="_3">説明<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>インターフェースの IP アドレスやゾーンの設定は省略しています。</p>
+<p>Destination NAT の宛先プールを作成します。<br />
+<div class="highlight"><pre><span></span><code>set security nat destination pool DstPool1 address 10.0.0.2/32
 </code></pre></div></p>
-<p>ISP から提供される認証情報を設定<br />
-<div class="highlight"><pre><span></span><code>set interfaces pp0 unit 0 ppp-options chap default-chap-secret &quot;Juniper!1&quot;
-set interfaces pp0 unit 0 ppp-options chap local-name &quot;juniper123@isp.example.net&quot;
-set interfaces pp0 unit 0 ppp-options chap passive
+<p>宛先ルールセットを作成します。from には interface, routing-instance も指定できます。<br />
+<div class="highlight"><pre><span></span><code>set security nat destination rule-set DstNat-RS1 from zone untrust
 </code></pre></div></p>
-<p>PPPoE オプションの設定<br />
-<div class="highlight"><pre><span></span><code>set interfaces pp0 unit 0 pppoe-options underlying-interface ge-0/0/0.0
-set interfaces pp0 unit 0 pppoe-options auto-reconnect 10
-set interfaces pp0 unit 0 pppoe-options client
+<p>どのアドレス宛てのパケットに NAT を適用するかのルールを指定します。<br />
+<div class="highlight"><pre><span></span><code>set security nat destination rule-set DstNat-RS1 rule DstNatR1 match destination-address 172.17.42.1/32
+set security nat destination rule-set DstNat-RS1 rule DstNatR1 then destination-nat pool DstPool1
 </code></pre></div></p>
-<p>IP 設定 (ISP から付与される IP を使用する場合)<br />
-<div class="highlight"><pre><span></span><code>set interfaces pp0 unit 0 family inet negotiate-address
+<p>グローバルアドレスブックを作成し、10.0.0.2/32 のアドレスを SERVER1 という名前で登録します。<br />
+<div class="highlight"><pre><span></span><code>set security address-book global address SERVER1 10.0.0.2/32
 </code></pre></div></p>
-<p>フレッツ向け MTU 設定<br />
-<div class="highlight"><pre><span></span><code>set interfaces pp0 unit 0 family inet mtu 1454
+<p>セキュリティポリシーで SERVER1 宛ての通信を許可します。<br />
+<div class="highlight"><pre><span></span><code>set security policies from-zone untrust to-zone trust policy server-access match source-address any
+set security policies from-zone untrust to-zone trust policy server-access match destination-address SERVER1
+set security policies from-zone untrust to-zone trust policy server-access match application any
+set security policies from-zone untrust to-zone trust policy server-access then permit
 </code></pre></div></p>
-<p>TCP MSS 設定（オプション）<br />
-<div class="highlight"><pre><span></span><code>set security flow tcp-mss all-tcp mss 1414
+<h3 id="arp">プロキシ ARP について<a class="headerlink" href="#arp" title="Permanent link">&para;</a></h3>
+<p>自分のインターフェース IP 宛ての通信の場合は必要ありませんが、インターフェースに直接設定されていない IP アドレス宛てのパケットに NAT を行いたい場合、ARP に応答するためにプロキシ ARP を設定する必要があります。<br />
+例えば、ge-0/0/1 が 172.17.42.1/24 を持っており、172.17.42.10 宛てのパケットに Destination NAT を行う場合、次の設定が必要です。<br />
+<div class="highlight"><pre><span></span><code>set proxy-arp interface ge-0/0/1.0 address 172.17.42.10/32
 </code></pre></div></p>
-<p>デフォルトルート設定<br />
-<div class="highlight"><pre><span></span><code>set routing-options static route 0.0.0.0/0 next-hop pp0.0
+<h2 id="_4">ポート番号に応じてアドレスの変換を行う場合（ポートフォワード）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>受信パケットのポート番号に応じて、Destination NAT の宛先を変更する設定。<br />
+パブリック IP アドレスが1つしかない場合でも、ssh や web などサービスごとに別々のサーバーに接続を行うことが可能です。</p>
+<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat-portforward.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat-portforward.png" /></a></p>
+<h3 id="_5">設定サンプル<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>set security address-book global address SERVER1 10.0.0.2/32
+set security address-book global address SERVER2 10.0.0.3/32
+set security nat destination pool DstPool1 address 10.0.0.2/32
+set security nat destination pool DstPool2 address 10.0.0.3/32
+set security nat destination rule-set DstNat-RS1 from zone untrust
+set security nat destination rule-set DstNat-RS1 rule DstNatR1 match destination-address 172.17.42.1/32
+set security nat destination rule-set DstNat-RS1 rule DstNatR1 match destination-port 80
+set security nat destination rule-set DstNat-RS1 rule DstNatR1 then destination-nat pool DstPool1
+set security nat destination rule-set DstNat-RS1 rule DstNatR2 match destination-address 172.17.42.1/32
+set security nat destination rule-set DstNat-RS1 rule DstNatR2 match destination-port 22
+set security nat destination rule-set DstNat-RS1 rule DstNatR2 then destination-nat pool DstPool2
+set security policies from-zone untrust to-zone trust policy SERVER1-ACCESS match source-address any
+set security policies from-zone untrust to-zone trust policy SERVER1-ACCESS match destination-address SERVER1
+set security policies from-zone untrust to-zone trust policy SERVER1-ACCESS match application junos-http
+set security policies from-zone untrust to-zone trust policy SERVER1-ACCESS then permit
+set security policies from-zone untrust to-zone trust policy SERVER2-ACCESS match source-address any
+set security policies from-zone untrust to-zone trust policy SERVER2-ACCESS match destination-address SERVER2
+set security policies from-zone untrust to-zone trust policy SERVER2-ACCESS match application junos-ssh
+set security policies from-zone untrust to-zone trust policy SERVER2-ACCESS then permit
+set security zones security-zone trust host-inbound-traffic system-services all
+set security zones security-zone trust interfaces ge-0/0/0.0
+set security zones security-zone untrust host-inbound-traffic system-services all
+set security zones security-zone untrust interfaces ge-0/0/1.0
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.0.1/24
+set interfaces ge-0/0/1 unit 0 family inet address 172.17.42.1/24
+</code></pre></div>
+<h2 id="destination-nat_1">Destination NAT の確認<a class="headerlink" href="#destination-nat_1" title="Permanent link">&para;</a></h2>
+<p>セッションにポリシーが適用されているかの確認には <code>show security flow session nat</code> を使用します。</p>
+<div class="highlight"><pre><span></span><code>root&gt; show security flow session nat    
+Session ID: 172220, Policy name: SERVER1-ACCESS/4, Timeout: 298, Session State: Valid
+  In: 172.17.42.2/41954 --&gt; 172.17.42.1/80;tcp, Conn Tag: 0x0, If: ge-0/0/1.0, Pkts: 6, Bytes: 1145, 
+  Out: 10.0.0.2/80 --&gt; 172.17.42.2/41954;tcp, Conn Tag: 0x0, If: ge-0/0/0.0, Pkts: 6, Bytes: 3881, 
+Total sessions: 1
+</code></pre></div>
+<p>In はルーターが受信したパケット、Out は戻りのパケットを表します。</p>
+<p>ポリシーの確認は、<code>show security nat destination rule all</code> を使用します。</p>
+<div class="highlight"><pre><span></span><code>root&gt; show security nat destination rule all       
+Total destination-nat rules: 1
+Total referenced IPv4/IPv6 ip-prefixes: 1/0
+Destination NAT rule: DstNatR1
+  Rule set                   : DstNat-RS1
+  Rule Id                    : 1
+  Rule position              : 1
+  From zone                  : untrust
+    Destination addresses    : 172.17.42.1     - 172.17.42.1
+  Action                     : DstPool1
+  Translation hits           : 3
+    Successful sessions      : 3
+  Number of sessions         : 0
+</code></pre></div>
+<p>プールの設定確認には、<code>show security nat destination pool all</code> を使用します。<br />
+<div class="highlight"><pre><span></span><code>root&gt; show security nat destination pool all       
+Total destination-nat pools: 1
+Pool name       : DstPool1
+Pool id         : 1
+Total address   : 1
+Translation hits: 3
+Address range                        Port 
+       10.0.0.2 - 10.0.0.2              0
 </code></pre></div></p>
-<p>pp0 インターフェースのセキュリティゾーン設定<br />
-<div class="highlight"><pre><span></span><code>set security zone security-zone Untrust interfaces pp0
-</code></pre></div></p>
-<p>pppoe の設定はここまでですが、クライアントが通信するために Source NAT とセキュリティポリシー設定などが必要です。</p>
-<p>Untrust 側インターフェースのゾーン設定<br />
-<div class="highlight"><pre><span></span><code>set security zones security-zone Untrust interfaces ge-0/0/0.0
-</code></pre></div></p>
-<p>Trust 側インターフェースのゾーン、IP アドレス設定<br />
-<div class="highlight"><pre><span></span><code>set security zones security-zone Trust interfaces ge-0/0/1.0
-set interfaces ge-0/0/1 unit 0 family inet address 192.168.1.1/24
-</code></pre></div></p>
-<p>Source NAT ルール作成<br />
-<div class="highlight"><pre><span></span><code>set security nat source rule-set trust-to-untrust from zone Trust
-set security nat source rule-set trust-to-untrust to zone Untrust
-set security nat source rule-set trust-to-untrust rule 1 match source-address 0.0.0.0/0
-set security nat source rule-set trust-to-untrust rule 1 then source-nat interface
-</code></pre></div></p>
-<p>セキュリティポリシー<br />
-<div class="highlight"><pre><span></span><code>set security policies from-zone Trust to-zone Untrust policy trust-to-untrust match source-address any
-set security policies from-zone Trust to-zone Untrust policy trust-to-untrust match destination-address any
-set security policies from-zone Trust to-zone Untrust policy trust-to-untrust match application any
-set security policies from-zone Trust to-zone Untrust policy trust-to-untrust then permit
-</code></pre></div></p>
-<h2 id="pppoe_1">PPPoE 接続の確認<a class="headerlink" href="#pppoe_1" title="Permanent link">&para;</a></h2>
-<p>セッション状態の表示<br />
-<div class="highlight"><pre><span></span><code>&gt; show pppoe interfaces brief
-Interface       Underlying            State       Session    Remote
-                interface                         ID         MAC
-pp0.0           ge-0/0/0.0            Session up  31601      00:00:5e:00:53:23
-</code></pre></div></p>
-<p>セッション詳細の表示<br />
-<div class="highlight"><pre><span></span><code>&gt; show pppoe interfaces detail
-pp0.0 Index 77
-  State: Session up, Session ID: 31601,
-  Service name: None,
-  Session AC name: BAS, Configured AC name: None,
-  Remote MAC address: 00:00:5e:00:53:23,
-  Session uptime: 1w6d 20:30 ago,
-  Auto-reconnect timeout: 10 seconds, Idle timeout: Never,
-  Underlying interface: ge-0/0/0.0 Index 76
-  Ignore End-of-List tag: Disable
-  PPP-Max-Payload tag: 1492
-</code></pre></div><br />
-pp0 インターフェース詳細の表示<br />
-<div class="highlight"><pre><span></span><code>&gt; show interfaces pp0
-Physical interface: pp0, Enabled, Physical link is Up
-  Interface index: 129, SNMP ifIndex: 501
-  Type: PPPoE, Link-level type: PPPoE, MTU: 1532
-  Device flags   : Present Running
-  Interface flags: Point-To-Point SNMP-Traps
-  Link type      : Full-Duplex
-  Link flags     : None
-  Input rate     : 2312 bps (5 pps)
-  Output rate    : 53720 bps (5 pps)
-
-  Logical interface pp0.0 (Index 77) (SNMP ifIndex 538)
-    Flags: Up Point-To-Point SNMP-Traps 0x0 Encapsulation: PPPoE
-    PPPoE:
-      State: SessionUp, Session ID: 31601,
-      Session AC name: BAS, Remote MAC address: 00:00:5e:00:53:23,
-      Configured AC name: None, Service name: None,
-      Auto-reconnect timeout: 10 seconds, Idle timeout: Never,
-      Underlying interface: ge-0/0/0.0 (Index 76)
-      Ignore End-Of-List tag: Disable
-      PPP-Max-Payload tag: 1492
-    Input packets : 4924380
-    Output packets: 5158844
-  Keepalive settings: Interval 10 seconds, Up-count 1, Down-count 3
-  Keepalive: Input: 19937 (00:00:13 ago), Output: 119721 (00:00:01 ago)
-  LCP state: Opened
-  NCP state: inet: Opened, inet6: Not-configured, iso: Not-configured, mpls: Not-configured
-  CHAP state: Success
-  PAP state: Closed
-    Security: Zone: external-1
-    Allowed host-inbound traffic : ike ping
-    Protocol inet, MTU: 1454
-    Max nh cache: 0, New hold nh limit: 0, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
-      Flags: Sendbcast-pkt-to-re, User-MTU, Negotiate-Address
-      Addresses, Flags: Kernel Is-Preferred Is-Primary
-        Destination: 192.0.2.1, Local: 192.0.2.75
-</code></pre></div></p>
+<h2 id="_6">参考資料<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.juniper.net/documentation/jp/ja/software/junos/nat/topics/topic-map/security-nat-destination.html" target="_blank" rel="noopener noreferrer">https://www.juniper.net/documentation/jp/ja/software/junos/nat/topics/topic-map/security-nat-destination.html</a></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 20, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 20, 2023</span>
       
     
   </small>
@@ -947,10 +1053,10 @@ Physical interface: pp0, Enabled, Physical link is Up
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": 0.1}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": 0.1}</script>
     
     
-      <script src="../../assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b4d07000.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
