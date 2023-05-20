@@ -41,6 +41,7 @@ nav:
   - SRX:
     - NAT:
       - srx/nat/source-nat.md
+      - srx/nat/destination-nat.md
     - srx/pppoe.md
     - vSRX:
       - srx/vsrx/vsrx-vsphere-installation.md  

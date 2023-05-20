@@ -1,4 +1,4 @@
-# Source NAT について
+# Source NAT
 
 Source NAT はルーターを通過するパケットの送信元アドレスの変換を行います。
 SRX では 1 対 1 でアドレスを変換する NAT、1 対多、多対多のアドレス変換を行う pool NAT が利用可能です。
@@ -89,10 +89,12 @@ set interfaces ge-0/0/1 unit 0 family inet address 172.17.42.1/24
 ```
 set security nat source pool src-nat-pool-1 address 10.0.0.12/32
 ```
+
 NAT ルールにプールを使用する指定をします。
 ```
 set security nat source rule-set RS1 rule SNATR1 then source-nat pool src-nat-pool-1
 ```
+
 プロキシ ARP を指定します。
 ```
 set security nat proxy-arp interface ge-0/0/0.0 address 10.0.0.12/32
@@ -115,6 +117,7 @@ Session ID: 2122, Policy name: nat/4, Timeout: 298, Session State: Valid
   Out: 10.0.0.2/80 --> 10.0.0.1/22745;tcp, Conn Tag: 0x0, If: ge-0/0/0.0, Pkts: 6, Bytes: 3881, 
 Total sessions: 1
 ```
+
 In はルーターが受信した NAT 前のパケット、Out は戻りのパケットを表します。
 
 ポリシーの確認は、`show security nat source rule all` を使用します。
