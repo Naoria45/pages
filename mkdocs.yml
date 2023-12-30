@@ -38,6 +38,7 @@ nav:
     - 設定:
       - junos/fundamental.md
       - junos/initialize.md
+      - junos/fbf.md
   - SRX:
     - NAT:
       - srx/nat/source-nat.md
