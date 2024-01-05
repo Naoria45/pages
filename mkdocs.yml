@@ -1,5 +1,5 @@
 site_name: docs.naokilog.com
-copyright: 2023 naokilog.com
+copyright: © 2024 naokilog.com
 theme: material
 extra:
   version: 0.1
@@ -39,6 +39,7 @@ nav:
       - junos/fundamental.md
       - junos/initialize.md
       - junos/fbf.md
+      - junos/upgrade.md
   - SRX:
     - NAT:
       - srx/nat/source-nat.md
