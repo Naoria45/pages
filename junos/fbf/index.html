@@ -12,7 +12,7 @@
         <link rel="prev" href="../initialize/">
       
       
-        <link rel="next" href="../../srx/nat/source-nat/">
+        <link rel="next" href="../upgrade/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -502,6 +502,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    アップグレード
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -966,7 +987,7 @@
 <p>送信元アドレスで next-hop を変えたい場合、以下のような設定になります。</p>
 <p>Router1 のデフォルトルートが Router2 になっている場合に、送信元が PC1(10.1.0.2) のトラフィックを Router3 経由で転送する場合を想定します。<br />
 各ルータの経路は設定済みで疎通できるものとします。</p>
-<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-source.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-source.png" /></a></p>
+<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-source.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-source.png" /></a></p>
 <pre><code>set interfaces ge-0/0/0 unit 0 family inet address 192.168.1.1/24
 set interfaces ge-0/0/1 unit 0 family inet address 192.168.2.1/24
 set interfaces ge-0/0/2 unit 0 family inet filter input <span style="color:red">FILTER-FBF</span>
@@ -1006,8 +1027,8 @@ set interfaces ge-0/0/2 unit 0 family inet address 10.1.0.1/24
 </code></pre></div></p>
 <h3 id="_4">確認<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>PC から traceroute で確認します。</p>
-<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-pc1-traceroute.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-pc1-traceroute.png" /></a></p>
-<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-pc2-traceroute.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-pc2-traceroute.png" /></a></p>
+<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-pc1-traceroute.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-pc1-traceroute.png" /></a></p>
+<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-pc2-traceroute.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="https://publicmediastore.blob.core.windows.net/photo/junos/fbf-pc2-traceroute.png" /></a></p>
 <h2 id="_5">参考文献<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p><a href="https://www.juniper.net/documentation/jp/ja/software/junos/routing-policy/topics/example/filter-based-forwarding-example.html" target="_blank" rel="noopener noreferrer">https://www.juniper.net/documentation/jp/ja/software/junos/routing-policy/topics/example/filter-based-forwarding-example.html</a></p>
 
@@ -1062,7 +1083,7 @@ set interfaces ge-0/0/2 unit 0 family inet address 10.1.0.1/24
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      2023 naokilog.com
+      © 2024 naokilog.com
     </div>
   
   

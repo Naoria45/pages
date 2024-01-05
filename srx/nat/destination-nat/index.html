@@ -413,6 +413,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../junos/upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    アップグレード
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1032,7 +1053,7 @@
 <h1 id="destination-nat">Destination NAT<a class="headerlink" href="#destination-nat" title="Permanent link">&para;</a></h1>
 <p>Destination NAT は宛先アドレスの変換を行います。<br />
 プライベート IP アドレスを使用しているサーバーをインターネットに公開する際などに使用される NAT です。</p>
-<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat_v2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat_v2.png" /></a></p>
+<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat_v2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat_v2.png" /></a></p>
 <h2 id="_1">単一アドレスの変換の場合<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>ポートの変換を行わない1対1の Destination NAT の設定です。<br />
 172.17.42.1 で受信したパケットを 10.0.0.2 のサーバーに転送します。</p>
@@ -1082,7 +1103,7 @@ set security policies from-zone untrust to-zone trust policy server-access then 
 <h2 id="_4">ポート番号に応じてアドレスの変換を行う場合（ポートフォワード）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>受信パケットのポート番号に応じて、Destination NAT の宛先を変更する設定。<br />
 パブリック IP アドレスが1つしかない場合でも、ssh や web などサービスごとに別々のサーバーに接続を行うことが可能です。</p>
-<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat-portforward.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat-portforward.png" /></a></p>
+<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat-portforward.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/destination-nat-portforward.png" /></a></p>
 <h3 id="_5">設定サンプル<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>set security address-book global address SERVER1 10.0.0.2/32
 set security address-book global address SERVER2 10.0.0.3/32
@@ -1198,7 +1219,7 @@ Address range                        Port
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      2023 naokilog.com
+      © 2024 naokilog.com
     </div>
   
   

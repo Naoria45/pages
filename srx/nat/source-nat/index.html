@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../../../junos/fbf/">
+        <link rel="prev" href="../../../junos/upgrade/">
       
       
         <link rel="next" href="../destination-nat/">
@@ -404,6 +404,27 @@
   
   <span class="md-ellipsis">
     Fillter-Based Forwarding (FBF)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../junos/upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    アップグレード
   </span>
   
 
@@ -1032,7 +1053,7 @@
 <h1 id="source-nat">Source NAT<a class="headerlink" href="#source-nat" title="Permanent link">&para;</a></h1>
 <p>Source NAT はルーターを通過するパケットの送信元アドレスの変換を行います。<br />
 SRX では 1 対 1 でアドレスを変換する NAT、1 対多、多対多のアドレス変換を行う pool NAT が利用可能です。</p>
-<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/source-nat_v2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/source-nat_v2.png" /></a></p>
+<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/source-nat_v2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/source-nat_v2.png" /></a></p>
 <h2 id="nat">エグレスインターフェース NAT<a class="headerlink" href="#nat" title="Permanent link">&para;</a></h2>
 <p>エグレス（egress）インターフェース NAT では、ルーターを通過したパケットの送信元アドレスを出力インターフェースのアドレスに変換します。<br />
 エグレスインターフェース NAT ではポートのアドレスも変換 (NAPT) されます。<br />
@@ -1075,7 +1096,7 @@ set security policies from-zone trust to-zone untrust policy internet-access the
 <p>インターフェース NAT 以外の NAT ではプールの定義が必要です。<br />
 プールを使用する Source NAT では、ポートアドレスの変換がデフォルトですが、行わない設定が可能です。<br />
 また、変換した送信元 IP アドレスに応答するため、プロキシ APR の設定が必要になります。</p>
-<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/source-nat-pool.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/source-nat-pool.png" /></a></p>
+<p><a class="glightbox" href="https://publicmediastore.blob.core.windows.net/photo/srx/source-nat-pool.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="https://publicmediastore.blob.core.windows.net/photo/srx/source-nat-pool.png" /></a></p>
 <h3 id="_3">設定サンプル<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>set security nat source pool src-nat-pool-1 address 10.0.0.12/32
 set security nat source rule-set RS1 from zone trust
@@ -1196,7 +1217,7 @@ source NAT rule: SrcNatR1                                           # ルール�
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      2023 naokilog.com
+      © 2024 naokilog.com
     </div>
   
   
